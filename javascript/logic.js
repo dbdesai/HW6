@@ -6,7 +6,15 @@ var science = [
 "Math", 
 "Laser", 
 "Bill Nye", 
- ];
+"Nuclear", 
+"diy", 
+"Chemistry",
+"Explosions",
+"Pizza",
+"Drones",
+"Biology",
+"Asteroids",
+"Computers" ];
 
 
 //Creates array buttons on load
@@ -69,15 +77,32 @@ $(document.body).on('click', '.button', function(){
 					var rating = $("<div class='rating' >");
 					rating.text("Rated:" + " " + JSON.stringify(response.data[i].rating));
 					$("#gifs").append(rating);
-                
-                }
+
+
+				}
+
+
+
 
 		});
-                $(document.body).on('click', '.gif', function(){
 
-                    var still = $(this).attr("src", res)
 
-                  
- -              });
+
+
+});
+
+$(document.body).on('click', '.gif', function(){
+	var state = $(this).attr('data-state'); 
+
+        if ( state == 'still'){
+            $(this).attr('src', $(this).data('animate'));
+            $(this).attr('data-state', 'animate');
+        }else{
+            $(this).attr('src', $(this).data('still'));
+            $(this).attr('data-state', 'still');
+        }
+
+	});
+
 
 
