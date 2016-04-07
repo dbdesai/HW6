@@ -1,0 +1,50 @@
+form {
+	background-image: url("file:///Users/dhavalbdesai/Desktop/RCB/HW6/images/pattern1.jpg");
+	font-family: 'Orbitron', sans-serif;
+	font-size: 50px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: white;
+	margin-top: 70px;
+	border-radius: 100px;
+}
+
+body{
+	background-image: url("file:///Users/dhavalbdesai/Desktop/RCB/HW6/images/chemistry.gif");
+}
+
+#buttons{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.button{
+	height:40px;
+	width:200px;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	border-radius: 100px;
+}
+
+input[type=submit]{
+	color: blue;
+	font-size: 20px;
+}
+
+#gifs{
+padding-top: 20px;
+width: 80%;
+margin:auto;
+text-align: center;
+
+}
+
+.rating{
+	color: white;
+	font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+}
